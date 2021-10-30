@@ -1,0 +1,195 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+:root {
+  --maincolor: white;
+  --scondcolor: #ff5722;
+}
+
+.container {
+  width: 653px;
+  height: 1090px;
+  background-color: white;
+  border: solid #9e9e9e 1px;
+  padding: 20px;
+  position: relative;
+  margin: 20px auto;
+  z-index: 1;
+}
+
+/* the box one */
+.container .box1 .photo img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+}
+
+button {
+  width: 120px;
+  height: 32px;
+  background-color: var(--scondcolor);
+  color: white;
+  border: none;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+.container .box1 .photo::before {
+  position: absolute;
+  content: "";
+  width: 611px;
+  height: 200px;
+  opacity: 0.5;
+  background-color: var(--scondcolor);
+  left: 20px;
+  top: 20px;
+  border-radius: 5px;
+}
+.container .box1 .true {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container .box1 .true img {
+  width: 25px;
+  padding-right: 10px;
+}
+.container .text1 {
+  width: 231px;
+  height: 386px;
+  background-color: #020202;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  position: absolute;
+  top: 37px;
+  left: 35px;
+}
+.container .text1::before {
+  top: 162px;
+}
+.container .article::before,
+.container .text1::before {
+  content: "";
+  position: absolute;
+  width: 39px;
+  height: 2px;
+  left: 23px;
+
+  background-color: var(--scondcolor);
+}
+
+.container .box1 p {
+  font-size: 12px;
+}
+.container .text1 h1 {
+  width: 225px;
+}
+.container .text2 {
+  height: 145px;
+  width: 275px;
+  padding: 10px;
+  border: solid 2px var(--scondcolor);
+  position: absolute;
+  line-height: 26px;
+  left: 327px;
+  top: 240px;
+}
+
+/* the box 2 */
+.container .box2 {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 445px;
+}
+
+.container .box2 .one {
+  background-color: rgb(230, 225, 225);
+  height: 302px;
+  padding: 10px;
+  width: 198px;
+  margin-left: 6px;
+}
+.container .box2 .arrow {
+  position: absolute;
+  top: 240px;
+}
+
+.container .box2 .arrow i {
+  position: absolute;
+  top: 2px;
+  left: 85px;
+}
+.container .box2 .arr {
+  color: var(--scondcolor);
+}
+.container .box2 h2:first-child {
+  color: var(--scondcolor);
+}
+/* the box three */
+.container .box3 {
+  width: 605px;
+  height: 284px;
+
+  position: absolute;
+  top: 775px;
+  left: 26px;
+  border-radius: 5px;
+}
+.container .box3 .pho1 {
+  position: absolute;
+  width: 606px;
+  height: 285px;
+  border-radius: 5px;
+}
+.container .box3 .pho2 {
+  width: 285px;
+  position: absolute;
+  height: 250px;
+  top: 23px;
+  left: 308px;
+  z-index: 3;
+  border-radius: 5px;
+
+  opacity: 0.7;
+}
+.container .box3 .article {
+  height: 284px;
+  width: 300px;
+  left: 20px;
+  top: 30px;
+  position: absolute;
+  padding: 7px;
+  padding-left: 27px;
+  z-index: 4;
+  color: var(--maincolor);
+}
+.article p {
+  line-height: 30px;
+}
+
+.article::before {
+  top: 65px;
+}
+.box3::after {
+  position: absolute;
+  content: "";
+  width: 606px;
+  height: 285px;
+  opacity: 0.9;
+  background-color: black;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  border-radius: 5px;
+}
+.box3 button {
+  color: black;
+}
